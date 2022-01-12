@@ -1,0 +1,130 @@
+/* Icons */
+
+#listing [data-dir=true] .material-icons::before { content: 'folder' }
+#listing [data-type=blob] .material-icons::before { content: 'insert_drive_file' }
+#listing [data-type=audio] .material-icons::before { content: 'volume_up' }
+#listing [data-type=video] .material-icons::before { content: 'movie' }
+#listing [data-type=image] .material-icons::before { content: 'image' }
+#listing [data-type=text] .material-icons::before { content: 'description' }
+#listing [data-type=pdf] .material-icons::before { content: 'description' }
+
+#listing [aria-label$=".ai"] .material-icons::before,
+#listing [aria-label$=".odg"] .material-icons::before,
+#listing [aria-label$=".xcf"] .material-icons::before { content: 'image' }
+
+#listing [aria-label$=".pptx"] .material-icons::before,
+#listing [aria-label$=".ppt"] .material-icons::before,
+#listing [aria-label$=".odp"] .material-icons::before { content: 'slideshow' }
+
+#listing [aria-label$=".doc"] .material-icons::before,
+#listing [aria-label$=".docx"] .material-icons::before,
+#listing [aria-label$=".odt"] .material-icons::before,
+#listing [aria-label$=".rtf"] .material-icons::before,
+#listing [aria-label$=".log"] .material-icons::before { content: 'description' }
+
+#listing [aria-label$=".xlsx"] .material-icons::before,
+#listing [aria-label$=".xls"] .material-icons::before,
+#listing [aria-label$=".ods"] .material-icons::before,
+#listing [aria-label$=".csv"] .material-icons::before,
+#listing [aria-label$=".db"] .material-icons::before { content: 'border_all' }
+
+#listing [aria-label$=".zip"] .material-icons::before,
+#listing [aria-label$=".rar"] .material-icons::before,
+#listing [aria-label$=".tar"] .material-icons::before,
+#listing [aria-label$=".7z"] .material-icons::before,
+#listing [aria-label$=".gz"] .material-icons::before,
+#listing [aria-label$=".bz2"] .material-icons::before,
+#listing [aria-label$=".xz"] .material-icons::before,
+#listing [aria-label$=".zst"] .material-icons::before { content: 'folder_zip' }
+
+#listing [aria-label$=".iso"] .material-icons::before,
+#listing [aria-label$=".wim"] .material-icons::before,
+#listing [aria-label$=".dmg"] .material-icons::before,
+#listing [aria-label$=".mds"] .material-icons::before,
+#listing [aria-label$=".ccd"] .material-icons::before { content: 'album' }
+
+#listing [aria-label$=".apk"] .material-icons::before,
+#listing [aria-label$=".exe"] .material-icons::before,
+#listing [aria-label$=".bat"] .material-icons::before,
+#listing [aria-label$=".sh"] .material-icons::before { content: 'web_asset' }
+
+#listing [aria-label$=".c"] .material-icons::before,
+#listing [aria-label$=".h"] .material-icons::before,
+#listing [aria-label$=".cpp"] .material-icons::before,
+#listing [aria-label$=".cs"] .material-icons::before,
+#listing [aria-label$=".go"] .material-icons::before,
+#listing [aria-label$=".py"] .material-icons::before,
+#listing [aria-label$=".js"] .material-icons::before,
+#listing [aria-label$=".html"] .material-icons::before,
+#listing [aria-label$=".vue"] .material-icons::before,
+#listing [aria-label$=".css"] .material-icons::before,
+#listing [aria-label$=".rs"] .material-icons::before,
+#listing [aria-label$=".java"] .material-icons::before,
+#listing [aria-label$=".json"] .material-icons::before { content: 'code' }
+
+#listing [aria-label$=".ttf"] .material-icons::before,
+#listing [aria-label$=".otf"] .material-icons::before,
+#listing [aria-label$=".woff"] .material-icons::before { content: 'font_download' }
+
+/* Colors */
+
+/* General */
+
+#listing [data-dir=true] .material-icons { color: var(--icon-blue) }
+#listing [data-type=audio] .material-icons  { color: var(--icon-yellow) }
+#listing [data-type=image] .material-icons { color: var(--icon-orange) }
+#listing [data-type=video] .material-icons { color: var(--icon-violet) }
+
+/* Image/Presentation */
+
+#listing [aria-label$=".pptx"] .material-icons,
+#listing [aria-label$=".ppt"] .material-icons,
+#listing [aria-label$=".odp"] .material-icons,
+#listing [aria-label$=".odg"] .material-icons,
+#listing [aria-label$=".xcf"] .material-icons,
+#listing [aria-label$=".vue"] .material-icons,
+#listing [aria-label$=".html"] .material-icons { color: var(--icon-orange) }
+
+/* Adobe/Oracle */
+
+#listing [data-type=pdf] .material-icons,
+#listing [aria-label$=".psd"] .material-icons,
+#listing [aria-label$=".ai"] .material-icons,
+#listing [aria-label$=".java"] .material-icons { color: var(--icon-red) }
+
+/* Spreadsheet/Google */
+
+#listing [aria-label$=".xlsx"] .material-icons,
+#listing [aria-label$=".xls"] .material-icons,
+#listing [aria-label$=".ods"] .material-icons,
+#listing [aria-label$=".apk"] .material-icons,
+#listing [aria-label$=".dex"] .material-icons,
+#listing [aria-label$=".go"] .material-icons { color: var(--icon-green) }
+
+/* Document/Microsoft/Apple/Closed */
+
+#listing [aria-label$=".docx"] .material-icons,
+#listing [aria-label$=".doc"] .material-icons,
+#listing [aria-label$=".odt"] .material-icons,
+#listing [aria-label$=".rtf"] .material-icons,
+#listing [aria-label$=".ico"] .material-icons,
+#listing [aria-label$=".emf"] .material-icons,
+#listing [aria-label$=".aac"] .material-icons,
+#listing [aria-label$=".mpg"] .material-icons,
+#listing [aria-label$=".mp2"] .material-icons,
+#listing [aria-label$=".mp3"] .material-icons,
+#listing [aria-label$=".mp4"] .material-icons,
+#listing [aria-label$=".vob"] .material-icons,
+#listing [aria-label$=".wim"] .material-icons,
+#listing [aria-label$=".dmg"] .material-icons,
+#listing [aria-label$=".exe"] .material-icons,
+#listing [aria-label$=".cs"] .material-icons { color: var(--icon-blue) }
+
+/* Video/Download */
+
+#listing [aria-label$=".rar"] .material-icons,
+#listing [aria-label$=".iso"] .material-icons { color: var(--icon-violet) }
+
+/* Other */
+
+#listing [aria-label$=".zip"] .material-icons { color: var(--icon-yellow) }
