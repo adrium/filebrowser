@@ -17,6 +17,8 @@
       </li>
     </ul>
 
+
+    // remove code to select elements because it is not necessary
     <p>
       {{ $t("prompts.currentlyNavigating") }} <code>{{ nav }}</code
       >.

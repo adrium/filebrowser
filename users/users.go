@@ -29,6 +29,7 @@ type User struct {
 	Locale       string        `json:"locale"`
 	LockPassword bool          `json:"lockPassword"`
 	ViewMode     ViewMode      `json:"viewMode"`
+	HideHidden   bool          `json:"hideHidden"`
 	SingleClick  bool          `json:"singleClick"`
 	Perm         Permissions   `json:"perm"`
 	Commands     []string      `json:"commands"`

@@ -24,6 +24,7 @@ export default {
   props: ["base", "noLink"],
   computed: {
     items() {
+      // path should be usable as two way binding
       const relativePath = this.$route.path.replace(this.base, "");
       let parts = relativePath.split("/");
 
@@ -51,6 +52,7 @@ export default {
         }
       }
 
+      // this should be configurable, editor should have one level more, because it displays a file
       if (breadcrumbs.length > 3) {
         while (breadcrumbs.length !== 4) {
           breadcrumbs.shift();

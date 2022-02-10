@@ -58,6 +58,11 @@
           @action="switchView"
         />
         <action
+          :icon="user.hideHidden ? 'visibility' : 'visibility_off'"
+          :label="$t('buttons.toggleHidden')"
+          @action="toggleHidden"
+        />
+        <action
           v-if="headerButtons.download"
           icon="file_download"
           :label="$t('buttons.download')"
@@ -832,6 +837,22 @@ export default {
       const data = {
         id: this.user.id,
         viewMode: modes[this.user.viewMode] || "list",
+      };
+
+      users.update(data, ["viewMode"]).catch(this.$showError);
+
+      // Await ensures correct value for setItemWeight()
+      await this.$store.commit("updateUser", data);
+
+      this.setItemWeight();
+      this.fillWindow();
+    },
+    toggleHidden: async function () {
+      this.$store.commit("closeHovers");
+
+      const data = {
+        id: this.user.id,
+        hideHidden: modes[this.user.viewMode] || "list",
       };
 
       users.update(data, ["viewMode"]).catch(this.$showError);
