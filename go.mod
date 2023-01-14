@@ -3,6 +3,7 @@ module github.com/filebrowser/filebrowser/v2
 go 1.18
 
 require (
+	github.com/adrium/goheif v0.0.0-20230113233934-ca402e77a786
 	github.com/asdine/storm/v3 v3.2.1
 	github.com/disintegration/imaging v1.6.2
 	github.com/dsoprea/go-exif/v3 v3.0.0-20201216222538-db167117f483
